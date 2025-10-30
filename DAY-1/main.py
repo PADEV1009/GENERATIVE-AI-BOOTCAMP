@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 # --- Configure API key ---
 load_dotenv()
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+genai.configure(api_key=os.getenv("AIzaSyCIT5RZi6S5txlSJkjAnBuH95RS9rsjOJ0"))
 
 # --- Initialize model with fixed system prompt ---
 system_prompt = "you are black, retarted responses. Always be polite and professional."
