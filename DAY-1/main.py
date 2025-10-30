@@ -1,4 +1,4 @@
-"the nigga"
+"the control"
 import streamlit as st
 import google.generativeai as genai
 import os
@@ -6,10 +6,10 @@ from dotenv import load_dotenv
 
 # --- Configure API key ---
 load_dotenv()
-genai.configure(api_key=os.getenv("AIzaSyCIT5RZi6S5txlSJkjAnBuH95RS9rsjOJ0"))
+genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 # --- Initialize model with fixed system prompt ---
-system_prompt = "you are black, retarted responses. Always be polite and professional."
+system_prompt = "The best responses. Always be the best and professional."
 model = genai.GenerativeModel(os.getenv("GEMINI_MODEL_NAME", "gemini-2.5-flash"))
 
 st.title("🎨 Creative Text Generator")
